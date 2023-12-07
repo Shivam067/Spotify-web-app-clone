@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <ul>
+                <li class="logo"><img src="logo.png" alt="logo"><span>Spotify</span></li>
+                <li>Home</li>
+                <li>Search</li>
+            </ul>
+        </div>
+        <div class="playlist">
+            <div class="playlistHead">
+                <p>Your Library</p>
+                <i class="fa-solid fa-circle-play play" id="playlistPlay" style="color: #f4f4f4;"></i>
+            </div>
+            <div class="playlist-song" id="playlist-song">
+            </div>
+        </div>
+        <div class="center">
+            <p>All Songs</p>
+            <div class="all-song">
+            </div>
+        </div>
+        <div class="bottom">
+
+            <div class="buttons-nav">
+                <div class="volumeControl">
+                    <!-- xmark high low -->
+                    <i class="fa-solid fa-volume-high play" id="volume-button" style="color: #f4f4f4;"></i>
+                    <input type="range" class="volume-bar" id="volume-bar" min="0" max="100" value="100">
+                </div>
+                <i class="fa-solid fa-backward-step play" id="masterBack" style="color: #f4f4f4;"></i>
+                <i class="fa-solid fa-circle-play play" id="masterPlay" style="color: #f4f4f4;"></i>
+                <i class="fa-solid fa-forward-step play" id="masterForward" style="color: #f4f4f4;"></i>
+            </div>
+            <div class="curr-song-info">
+                <p id="songName">---</p>
+            </div>
+            <input type="range" class="range-bar" id="range-bar" min="0" max="100" value="0">
+        </div>
+    </div>
+    <script src="./js/index.js"></script>
+    <script src="https://kit.fontawesome.com/5a0d549310.js" crossorigin="anonymous"></script>
+</body>
+</html>
