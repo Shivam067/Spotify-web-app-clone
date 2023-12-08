@@ -281,6 +281,11 @@ allSongArray.forEach((element,i)=>{
             element.classList.add('fa-circle-pause');
         }
         else{
+            if(allSongArray[index].classList.contains('fa-circle-pause')==true)
+            {
+                allSongArray[index].classList.remove('fa-circle-pause');
+                allSongArray[index].classList.add('fa-circle-play');
+            }
             clicked(i);
             playlistContent.forEach((element)=>{
                 if(element.id.split('-')[2]-1==index){
